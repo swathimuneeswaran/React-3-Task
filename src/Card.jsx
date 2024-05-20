@@ -77,13 +77,15 @@ function Card({ todo, onEdit, onDelete }) {
             </>
           ) : (
             <>
-              <h6 className="card-title">Name: {todo.name}</h6>
-              <h6 className="card-subtitle mb-2">Description: {todo.description}</h6>
+              <h6 className="card-title" style={{fontStyle:"italic",marginTop:"20px"}}>Name: {todo.name}</h6>
+              <h6 className="card-subtitle mb-2" style={{fontStyle:"italic",marginTop:"10px"}}>Description: {todo.description}</h6>
               <div className="dropdown">
                 <button
                   className="btn btn-secondary dropdown-toggle"
                   type="button"
                   onClick={handleDropdownToggle}
+
+                  style={{fontStyle:"italic",marginTop:"20px",marginBottom:"20px"}}
                 >
                   {todo.status}
                 </button>
